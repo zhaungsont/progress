@@ -1,0 +1,21 @@
+.title {
+	font-family: 'Rubik Glitch', sans-serif;
+
+	animation: float 0.75s ease-out forwards;
+
+}
+
+@keyframes float {
+	0% {
+		scale: 0.5;
+		transform: translateY(-100px);
+	}
+	80% {
+		transform: translateY(40px);
+		scale: 0.8;
+	}
+	100% {
+		transform: translateY(0px);
+		scale: 1;
+	}
+}

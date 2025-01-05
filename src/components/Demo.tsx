@@ -1,13 +1,12 @@
 import { useState } from 'react';
-import './App.css';
-import Game from './components/Game';
-import { v4 as uuidv4 } from 'uuid';
-import { Task } from './models/game';
 import { ToastContainer, toast } from 'react-toastify';
-import { useAppDispatch, useAppSelector } from './app/hooks';
-import { addWorker } from './app/workerSlice';
+import { v4 as uuidv4 } from 'uuid';
+import { useAppDispatch, useAppSelector } from '../app/hooks';
+import { addWorker } from '../app/workerSlice';
+import Game from '../components/Game';
+import { Task } from '../models/game';
 
-function App() {
+function Demo() {
 	const [tasks, setTasks] = useState<Task[]>([]);
 	const [newTaskName, setNewTaskName] = useState('');
 	const dispatch = useAppDispatch();
@@ -82,4 +81,4 @@ function App() {
 	);
 }
 
-export default App;
+export default Demo;
